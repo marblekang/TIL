@@ -1,4 +1,4 @@
-## 1. Routung 하기. (페이지 나누기)
+## 1. Routing 하기. (페이지 나누기)
 ```javascript
 (App.js)
 
