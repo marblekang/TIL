@@ -14,6 +14,7 @@
 - HTML 태그는 non-semantic , semantic 요소로 구분 할 수 있다.
 
 > non-semantic 요소 : div, span 등 이 있으며 이들 태그는 contents에 대한 어떤 설명도 하지 않는다. 
+
 > semantic 요소: form, table, img 등이 있으며 contents의 의미를 명확히 설명한다.
 
 ### HTML 에서 추가된 시맨틱 태그
