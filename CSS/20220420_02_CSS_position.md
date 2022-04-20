@@ -20,7 +20,12 @@
 ### fixed
 - viewport(브라우저 화면)를 기준으로 배치하며 마찬가지로 `top, right, bottom , left` 속성을 이용해 배치할 수 있다.
 
+## 요소의 display 변경
+- `position` 속성의 값으로 `absolute` , `fixed` 가 지정된 요소는 `display` 속성이 `block` 으로 변경된다. 
+
 ---
+
+<br>
 
 ## Stack order(요소 쌓임 순서)
 - 어떤 요소가 사용자와 더 가깝게 있는지(위에 쌓이는지 ) 결정.
@@ -99,3 +104,5 @@ main.css
 
 - `.item:nth-child(1)` 에 `z-index` 속성을 추가하면 `.item:nth-child(2)` 보다 더 위에 쌓인다. 
 - `.item:nth-child(3)` 은 `positiion` 속성이 지정되어 있지 않기 때문에 `z-index` 값이 더 높은 숫자 여도 반영되지 않는다.
+
+
