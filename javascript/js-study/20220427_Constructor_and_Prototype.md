@@ -82,5 +82,9 @@ f function Person(name, age) {
 ## 프로토타입 사용이 효율적인 이유
 - `this` 를 사용하는 것보다 `prototype` 이 효율적인 이유는 , `this` 에 넣은것은 객체 하나를 만들때 마다 메서드도 하나씩 만들어 지기 때문에 메모리 낭비가 발생하지만 `prototype` 은 모든 객체가 공유하고 있어서 한번만 만들어 지기 때문에 불필요한 메모리 사용을 방지할 수 있다. 
 
+출처
 
+https://www.zerocho.com/category/JavaScript/post/573c2acf91575c17008ad2fc
+
+https://codingapple.com/
 
