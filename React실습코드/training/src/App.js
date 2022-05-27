@@ -30,6 +30,7 @@ const Main = () => {
   const checkIdValid = (id) => {
     return id.length >= 6 && id.length <= 20;
   };
+
   const checkPasswordValid = (password) => {
     return password.length >= 12 && password.length <= 20;
   };
@@ -47,8 +48,6 @@ const Main = () => {
       alert("유효하지 않은 password입니다.");
       return;
     }
-
-    window.location.href = `/hello/${idInput.current.value}`;
   };
 
   const handleChangeId = (e) => {
@@ -59,6 +58,15 @@ const Main = () => {
     setPassword(e.target.value);
   };
 
+  const button = (
+    <button
+      type="button"
+      onClick={handleClick}
+      disabled={!(id.length || password.length)}
+    >
+      회원가입
+    </button>
+  );
   return (
     <div>
       <div>
@@ -83,14 +91,11 @@ const Main = () => {
         />
         {!checkPasswordValid(password) && "유효하지 않은 password입니다."}
       </div>
-
-      <button
-        type="button"
-        onClick={handleClick}
-        disabled={!(id.length || password.length)}
-      >
-        회원가입
-      </button>
+      {checkIdValid(id) && checkPasswordValid(password) ? (
+        <Link to={`/hello/${id}`}>{button}</Link> //왜 여기선 중괄호?
+      ) : (
+        button
+      )}
     </div>
   );
 };
@@ -99,4 +104,3 @@ const Hello = () => {
   const { id } = useParams();
   return <>환영합니다. {id}</>;
 };
-export default App;
